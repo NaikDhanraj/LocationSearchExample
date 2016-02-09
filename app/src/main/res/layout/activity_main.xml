@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <EditText
+     android:layout_width="match_parent"
+     android:layout_height="50dp"
+     android:id="@+id/autocomplete_tv"
+     android:drawableLeft="@drawable/search_location"
+     android:drawablePadding="8dp"
+     android:layout_marginLeft="4dp"
+     android:singleLine="true"
+     android:hint="Search Places here.."
+     android:background="@drawable/write_text"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear_search"
+        android:layout_marginTop="12dp"
+        android:paddingRight="6dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/clear_text"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchResult"
+        android:layout_below="@+id/autocomplete_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        ></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
